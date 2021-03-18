@@ -1,0 +1,24 @@
+<html> 
+    <head>
+
+    </head>
+
+    <body>
+        <p>bine ai venit in pagina data!</p>
+         <script>
+            
+            //salveaza stringul din url in variabila query
+            var query = window.location.search;
+
+            var urlParams = new URLSearchParams(query);
+
+            var nume = urlParams.get('name');
+            var varsta = urlParams.get('age');
+            console.log(nume + " are " + varsta + " ani ");
+            
+        </script>
+    </body>
+
+
+
+</html>
